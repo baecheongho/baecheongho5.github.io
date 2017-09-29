@@ -1,0 +1,265 @@
+global:
+  portuguese: Português
+  english: English
+  spanish: Español
+  tagline: English
+  about: Sobre
+  twitter: Twitter
+exchanges:
+  demo:
+    title: BlinkDemo - Demonstração da plataforma open source de negociação de Bitcoins da blinktrade
+    description: Site de demonstração da plataforma de negociação de Bitcoins open source da Blinktrade
+    keywords: bitcoin, exchange de bitcoins, mercado de bitcoins, bolsa de bitcoins, open source
+    lead: Demonstração da exchange de Bitcoins open source da Blinktrade
+  chilebit:
+    title: ChileBit.NET - A primeira exchange de Bitcoins do Chile
+    description: Compre e venda bitcoins no Chile de maneira segura através do ChileBit.NET. Com o ChileBit.NET você pode começar a comprar e vender bitcoins hoje. O processo de registro dura menos de um minuto.
+    keywords: Compra e venda de bitcoins no Chile, bolsa de bitcoins no Chile, venda bitcoins no Chile, compre bitcoins no Chile
+    lead: A primeira exchange de Bitcoins do Chile
+  surbitcoin:
+    title: Surbitcoin - A primeira exchange de Bitcoins da Venezuela
+    description: Compre e venda bitcoins na Venezuela de maneira segura através da SurBitcoin. Com a SurBitcoin você pode começar a comprar e vender bitcoins hoje. O processo de registro dura menos de um minuto.
+    keywords: Compra e venda de bitcoins na Venezuela, bolsa de bitcoins na Venezuela, venda bitcoins na Venezuela, compre bitcoins na Venezuela
+    lead: A primeira exchange de Bitcoins da Venezuela
+  urdubit:
+    title: UrduBit - A primeira exchange de Bitcoins do Pakistão
+    description: Compre e venda bitcoins no Pakistão de maneira segura através da Urdubit. Com a UrduBit você pode começar a comprar e vender bitcoins hoje. O processo de registro dura menos de um minuto.
+    keywords: Compra e venda de bitcoins no Pakistão, bolsa de bitcoins no Pakistão, venda bitcoins no Pakistão, compre bitcoins no Pakistão
+    lead: A primeira exchange de Bitcoins do Pakistão
+  foxbit:
+    title: FoxBit - Compre e venda Bitcoins no Brasil
+    description: Compre e venda bitcoins no Brasil de maneira segura através da FoxBit. Com o FoxBit você pode começar a comprar e vender bitcoins hoje. O processo de registro dura menos de um minuto.
+    keywords: Compra e venda de bitcoins no Brasil, bolsa de bitcoins no Brasil, venda bitcoins no Brasil, compre bitcoins no Brasil
+    lead: Compre e Venda seus bitcoins de maneira segura e rápida.
+  romaniabex:
+    title: RomaniaBitcoin.exchange - Compre e venda bitcoins na Romênia
+    description:  Compre e venda bitcoins na Romênia
+    keywords: Compra e venda de bitcoins na Romênia, bolsa de bitcoins na Romênia, venda bitcoins na Romênia, compre bitcoins na Romênia
+    lead: Compre e venda bitcoins na Romênia
+  bitcoinvietnam:
+    title: VBTC - Compre e venda bitcoins no Vietnam 
+    description: Compre e venda bitcoins no Vietnam
+    keywords: Compra e venda de bitcoins no Vietnam, bolsa de bitcoins no Vietnam, venda bitcoins no Vietnam, compre bitcoins no Vietnam
+    lead: Compre e venda bitcoins no Vietnam
+  yuanbit:
+    title: YuanBit.com - Compre e venda bitcoins na China
+    description: Compre e venda bitcoins na China
+    keywords: Compra e venda de bitcoins na China, bolsa de bitcoins na China, venda bitcoins na China, compre bitcoins na China
+    lead: Compre e venda bitcoins na China
+  bitinvest:
+    title: Bitinvest - Bitcoin rápido, fácil e seguro - Comprar e Vender Bitcoin com as menores taxas do Brasil
+    description: Bitinvest - Bitcoin rápido, fácil e seguro - Comprar e Vender Bitcoin com as menores taxas do Brasil
+    keywords: Bitinvest - Bitcoin rápido, fácil e seguro - Comprar e Vender Bitcoin com as menores taxas do Brasil
+    lead: Bitcoin rápido, fácil e seguro - Comprar e Vender Bitcoin com as menores taxas do Brasil
+  unocoin:
+    title: Unocoin | India's Bitcoin Wallet
+    description: Unocoin is India's most popular bitcoin wallet. We make it super easy to securely buy, use and accept bitcoin, following KYC-AML guidelines.
+    keywords: bitcoin, buy bitcoin, sell bitcoin, buy bitcoin india, sell bitcoin india, bitcoin india, bitcoin inr, btc inr, bitcoin wallet india, store bitcoin india, buy bitcoin inr, sell bitcoin inr, send bitcoin, send bitcoin india, receive bitcoin, receive bitcoin india, bitcoin price, btc to inr, btc price in inr, bitcoin exchange
+    lead: Unocoin is india's most popular bitcoin wallet
+
+views:
+  landing:
+    about:
+      learn: Mais
+      phrase1:
+        title: Fácil e Rapido
+        icon: ico-tradewithus
+        description: Nós focamos na Simplicidade. Trabalhamos duro para tornar fácil a compra e venda de Bitcoins, trazendo recursos avançados como <a href="https://github.com/blinktrade/algorithm-trading" target="_BLANK">algoritimos de negociação de código aberto</a> para você. Todos os depósitos e retiradas são instantâneos permitindo que você consiga comprar ou vender em menos de 1 minuto.
+      phrase2:
+        title: 100% Transparente
+        icon: ico-secure
+        description: Nossa transparência vai desde o nosso código fonte que é <a href="https://github.com/blinktrade/frontend/" target="_BLANK">100% open source</a>, e disponível para que todos possam analisar e procurar por pontos que reforçem a segurança de toda a exchange. Nossas carteiras, quente e fria são públicas e disponíveis para que você possa verificar a solvência diretamente no blockchain.
+      phrase3:
+        title: Maecenas vel magna
+        icon: ico-liquidity
+        description: Donec ac tincidunt enim, quis porttitor massa. Sed vulputate ex at quam venenatis, non facilisis justo vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi diam nisl, congue vehicula maximus eget, tempor nec ipsum. Vestibulum feugiat consequat lacus et congue. Phasellus eu felis vel dui cursus pharetra quis non lectus. Curabitur porta ultrices magna sit amet ultrices. Nam cursus lorem mollis arcu dignissim congue. Praesent vitae venenatis lorem, sit amet efficitur ipsum.
+      phrase4:
+        title: Membro da rede BLINKTRADE
+        icon: ico-decentralized
+        description: Somos membros da rede global da <a href="https://blinktrade.com" target="_BLANK">BLINKTRADE</a>, rede que integra <a href="https://foxbit.com.br/" target="_BLANK">FOXBIT</a> no Brasil, <a href="https://surbitcoin.com/" target="_BLANK">SurBitcoin</a> na Venezuela, <a href="https://chilebit.net/" target="_BLANK">ChileBit.NET</a> no Chile, <a href="https://urdubit.com/" target="_BLANK">UrduBit</a> no Paquistão e <a href="https://vbtc.vn/" target="_BLANK">VBTC</a> no Vietnã junto com outras empresas, formadores de mercado, empresas de remessa de valores, processadoras de pagamento. Operando conosco, você terá acesso a toda rede mundial de exchanges com suporte local.
+    orderbook:
+      title: Livro de ofertas 
+    signup:
+      title: CRIE A SUA CONTA AGORA
+      description: Registre-se e descubra o como é fácil negociar conosco. 
+  footer:
+    about: Sobre
+    company: Empresa
+    platform: Plataforma
+    blog: Blog
+    chart: Gráfico
+    latency: Latência
+    version: Versão
+
+  toolbar:
+    faq: Ajuda
+    trading: Negociações
+    market: Mercado
+    signin: Login
+    signup: Registrar
+    connect: Conectar
+    high: ALTA 
+    last: ÚLTIMO 
+    low: BAIXA
+    volume: VOLUME
+
+  start:
+    bid: Compra
+    ask: Venda
+    username: "Login:"
+    password: "Senha:"
+    login: Entrar
+    signup: Registrar
+
+  faq:
+    title: FAQ - Perguntas Frequentes
+    get_in_touch: Entre em contato caso você não tenha conseguido encontrar a resposta para a sua pergunta
+
+  signup:
+    title: Registrar
+    already_registered:  Já possui registro?
+    login: Entrar
+    username: Nickname
+    email: Email
+    email_placeholder: "ex.: jose@email.com"
+    password: Senha
+    password_help: Pelo menos 8 letras
+    confirm_password: Confirme a sua senha
+    country: País
+    state: Estado ou Província
+    broker: Corretor
+    terms_of_service: Termos de serviço
+    i_agree_with_terms_of_service: Estou de acordo com os termos de serviço
+    signup_button_label: Registrar
+
+  signin:
+    title: Login
+    dont_have_an_account: Não possui uma conta?
+    signup: Registre-se
+    username: Nickname
+    password: Senha
+    forgot_your_password: Esqueceu a sua senha?
+    login_button_label: Entrar
+
+  forgot_password:
+    title: Recuperação da senha
+    email: Email
+    recover_password_button_label: Recuperar senha
+
+  set_new_password:
+    title: Definir nova senha
+    security_code: Código de segurança
+    security_code_help: Nós acabamos de enviar um código de segurança para o seu email.
+    new_password: Nova senha
+    new_password_help: Pelo menos 8 letras
+    confirm_password: Confirme a sua senha
+    set_new_password_button_label: Redefinir senha
+
+  profile:
+    title: Meu Perfil
+    two_factor_auth_section:
+      title: Autenticação em 2 passos (2FA)
+      key: Chave
+      authentication_code: Código de Autenticação
+      authentication_code_title: Código gerado pelo Google Authenticator
+      authentication_code_placeholder: Ex. 555555
+      enable: Habilitar
+      disable: Desabilitar
+
+  trading:
+    title: Comprar ou Vender
+
+  offerbook:
+    title: Livro de ofertas
+    cumulative: Acumulado
+    fees: Taxas
+
+  admin:
+    title: Admin
+
+  customers:
+    title: Meus clientes
+
+  account_overview:
+    title:  Detalhe da conta
+    set_user_fees_button_label: Definir taxas personalizadas
+
+  withdraw:
+    title: Saques
+
+  withdraw_requests:
+    title: Pedidos de saques
+
+  withdraw_methods:
+    title: Withdraw methods
+
+  deposit:
+    title: Depósitos
+
+  deposit_requests:
+    title: Pedidos de depósitos
+
+  ledger:
+    title: Livro contábil
+
+  algotrading:
+    title: Algorithm Trading
+
+  api:
+    title: API Keys
+    new_api_key: Nova API Key
+
+  settings:
+    title: Configurações
+
+  verification:
+    title: Verificar a sua conta
+
+  market:
+    title: Mercado
+
+  alerts:
+    verification: Verifique a sua conta enviando seus documentos.
+    enable_two_factor: Você pode aumentar a segurança da sua conta apenas habilitando a autenticação em dois passos
+    frozen_account: A sua conta foi congelada pelo administrador, por favor contate o suporte.
+
+  line_of_credit:
+    title: Linha de crédito
+
+  history:
+    title: Histórico de ordens
+
+  partners:
+    title: Use os seus Bitcoins
+    more: Mais
+    purseio:
+      title: Purse.io
+      description: Economize 15% no Amazon.com pagando com Bitcoin
+
+  sidebar:
+    admin: Admin
+    market: "Mercado:"
+    navigation: Navegação
+    menu: Menu
+    my_profile: Meu perfil
+    my_broker: Sobre a exchange
+    trading: Comprar ou Vender
+    offerbook: Livro de ofertas
+    partners: Use os seus Bitcoins
+    ledger: Livro contábil
+    customers: Meus clientes
+    deposit_requests: Depósitos ( clientes )
+    withdraw_requests: Saques ( clientes )
+    deposit: Depósitos
+    withdraw: Saques
+    verification: Verificar a sua conta
+    line_of_credit: Linha de crédito
+    support: Suporte e Sugestões
+    api: API
+    logout: Sair
+    algotrading: Algo Trading
+    history: Histórico de ordens
+    card:  Blink Card
+  themes:
+    title: Temas
+    choose: Escolha um tema

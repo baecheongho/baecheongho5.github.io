@@ -1,0 +1,266 @@
+global:
+  portuguese: Português
+  english: English
+  spanish: Español
+  Chinese: 中文
+  tagline: Tiếng Việt
+  about: Về chúng tôi
+  twitter: Twitter
+exchanges:
+  demo:
+    title: BlinkDemo - Trang mẫu sàn giao dịch Bitcoin mã nguồn mở
+    description: Trang mẫu sàn giao dịch Bitcoin mã nguồn mở
+    keywords: bitcoin, bitcoin exchange, open source bitcoin exchange, bitcoin trading platform, open source bitcoin trading plataform
+    lead: See our open source Bitcoin exchange in action
+  chilebit:
+    title: ChileBit.NET - Mua và bán Bitcoin tại Chile
+    description: Mua và bán Bitcoin tại Chile
+    keywords: Buy and sell bitcoin in Chile, bitcoin exchange in Chile, sell bitcoins in Chile, buy bitcoins in Chile
+    lead: Sàn giao dịch Bitcoin đầu tiên tại Chile
+  surbitcoin:
+    title: SurBitcoin - Mua và bán Bitcoin tại Venezuela
+    description: Mua và bán Bitcoin tại Venezuela
+    keywords: Buy and sell bitcoin in Venezuela, bitcoin exchange in Venezuela, sell bitcoins in Venezuela, buy bitcoins in Venezuela
+    lead: Sàn giao dịch Bitcoin đầu tiên tại Venezuela
+  urdubit:
+    title: UrduBit - Mua và bán Bitcoin tại Pakistan
+    description: Mua và bán Bitcoin tại Pakistan
+    keywords: Buy and sell bitcoin in Pakistan, bitcoin exchange in Pakistan, sell bitcoins in Pakistan, buy bitcoins in Pakistan
+    lead: Sàn giao dịch Bitcoin đầu tiên tại Pakistan
+  foxbit:
+    title: FoxBit - Mua và bán Bitcoin tại Brazil
+    description: Mua và bán Bitcoin tại Brazil
+    keywords: Buy and sell bitcoin in Brazil, bitcoin exchange in Brazil, sell bitcoins in Brazil, buy bitcoins in Brazil, Bitcoin exchange in Brazil
+    lead: Sàn giao dịch Bitcoin đầu tiên tại Brasil
+  romaniabex:
+    title: RomaniaBitcoin.Exchange - Mua và bán Bitcoin tại Romania
+    description: Mua và bán Bitcoin tại Romania
+    keywords: Buy and sell bitcoin in Romania, bitcoin exchange in Romania, sell bitcoins in Romania, buy bitcoins in Romania
+    lead: Sàn giao dịch Bitcoin đầu tiên tại Romania
+  bitcoinvietnam:
+    title: VBTC - Mua và bán Bitcoin tại Việt Nam
+    description: Mua và bán Bitcoin tại Việt Nam
+    keywords: Mua và bán Bitcoin, sàn giao dịch Bitcoin, mua Bitcoin, bán Bitcoin, Buy and sell bitcoin in Vietnam, bitcoin exchange in Vietnam, sell bitcoins in Vietnam, buy bitcoins in Vietnam, VBTC
+    lead: Mua và bán Bitcoin tại Việt Nam
+  yuanbit:
+    title: YuanBit.com - Mua và bán Bitcoin tại Trung Quốc
+    description: Mua và bán Bitcoin tại Trung Quốc
+    keywords: Buy and sell bitcoin in China, bitcoin exchange in China, sell bitcoins in China, buy bitcoins in China
+    lead: Mua và bán Bitcoin tại Trung Quốc
+  bitinvest:
+    title: Bitinvest - Bitcoin rápido, fácil e seguro - Comprar e Vender Bitcoin com as menores taxas do Brasil
+    description: Bitinvest - Bitcoin rápido, fácil e seguro - Comprar e Vender Bitcoin com as menores taxas do Brasil
+    keywords: Bitinvest - Bitcoin rápido, fácil e seguro - Comprar e Vender Bitcoin com as menores taxas do Brasil
+    lead: Bitcoin rápido, fácil e seguro - Comprar e Vender Bitcoin com as menores taxas do Brasil
+  unocoin:
+    title: Unocoin | India's Bitcoin Wallet
+    description: Unocoin is India's most popular bitcoin wallet. We make it super easy to securely buy, use and accept bitcoin, following KYC-AML guidelines.
+    keywords: bitcoin, buy bitcoin, sell bitcoin, buy bitcoin india, sell bitcoin india, bitcoin india, bitcoin inr, btc inr, bitcoin wallet india, store bitcoin india, buy bitcoin inr, sell bitcoin inr, send bitcoin, send bitcoin india, receive bitcoin, receive bitcoin india, bitcoin price, btc to inr, btc price in inr, bitcoin exchange
+    lead: Unocoin is india's most popular bitcoin wallet
+views:
+  landing:
+    about:
+      learn: Learn More
+      phrase1:
+        title: Đơn Giản và Hiệu Quả
+        icon: ico-tradewithus
+        description: Phương châm của chúng tôi là sự đơn giản. Chúng tôi làm việc hết mình để đem lại trải nghiệm sử dụng đơn giản nhất, kể cả với những tính năng phức tạp như <a href="https://github.com/blinktrade/algorithm-trading" target="_BLANK">thuật toán giao dịch</a>. Việc rút và nhận tiền được tự động hóa để bạn có thể mua được Bitcoin trong vòng dưới 1 phút.
+      phrase2:
+        title: 100% Minh Bạch
+        icon: ico-secure
+        description: Chúng tôi luôn hướng tới việc minh bạch hoàn toàn hệ thống. Mã nguồn của sàn là <a href="https://github.com/blinktrade/frontend/" target="_BLANK">100% mã nguồn mở</a> để mọi người đều có thể phân tích và tìm ra những điểm yếu trong bảo mật. Ví nóng và ví lạnh của chúng tôi hoàn toàn được công khai, do đó bạn có thể kiểm tra tính thanh khoản của sàn trực tiếp trên Blockchain bất kỳ lúc nào.
+      phrase3:
+        title: Maecenas vel magna
+        icon: ico-liquidity
+        description: Donec ac tincidunt enim, quis porttitor massa. Sed vulputate ex at quam venenatis, non facilisis justo vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi diam nisl, congue vehicula maximus eget, tempor nec ipsum. Vestibulum feugiat consequat lacus et congue. Phasellus eu felis vel dui cursus pharetra quis non lectus. Curabitur porta ultrices magna sit amet ultrices. Nam cursus lorem mollis arcu dignissim congue. Praesent vitae venenatis lorem, sit amet efficitur ipsum.
+      phrase4:
+        title: Thành viên của BLINKTRADE
+        icon: ico-decentralized
+        description: Chúng tôi là một thành viên của [mạng BlinkTrade] toàn cầu, bao gồm <a href="https://foxbit.com.br" target="_BLANK">FoxBit</a> tại Brazil, <a href="https://surbitcoin.com" target="_BLANK">SurBitcoin</a> tại Venezuela, <a href="https://chilebit.net/" target="_BLANK">ChileBit.NET</a> tại Chile, <a href="https://urdubit.com/" target="_BLANK">UrduBit</a> tại Pakistan và <a href="https://vbtc.vn/" target="_BLANK">VBTC</a> tại Việt Nam, cùng các công ty, nhà tạo lập thị trường và hệ thống xử lý thanh toán khác. Thông qua nền tảng của chúng tôi, bạn sẽ có thể truy cập vào mạng lưới sàn giao dịch toàn cầu này bằng bất kỳ ngôn ngữ nào bạn sử dụng.
+    orderbook:
+      title: Live Order Book
+    signup:
+      title: CREATE YOUR ACCOUNT NOW
+      description: Sign up and discover how easy it is to trade with us.
+  footer:
+    about: About
+    company: Company
+    platform: Platform
+    blog: Blog
+    chart: Chart
+    latency: Độ trễ
+    version: Phiên bản
+
+  toolbar:
+    faq: Hỏi & Đáp
+    trading: Giao dịch
+    market: Thị trường
+    signin: Đăng nhập
+    signup: Đăng ký
+    connect: Kết nối
+    high: Cao
+    last: Cuối 
+    low: Thấp 
+    volume: Khối lượng
+
+  start:
+    bid: Mua
+    ask: Bán
+    username: "Tên đăng nhập:"
+    password: "Mật khẩu:"
+    login: Đăng nhập
+    signup: Đăng ký
+
+  faq:
+    title: Hỏi & Đáp - Những câu hỏi thường gặp
+    get_in_touch: Hãy liên hệ với chúng tôi nếu bạn không tìm thấy câu trả lời tại đây
+
+  signup:
+    title: Đăng ký
+    already_registered:  Bạn đã đăng ký?
+    login: Đăng nhập
+    username: Tên đăng nhập
+    email: Địa chỉ Email
+    email_placeholder: "Ví dụ: ngoctrinh@gmail.com"
+    password: Mật khẩu
+    password_help: Ít nhất 8 ký tự
+    confirm_password: Xác nhận mật khẩu
+    country: Quốc gia
+    state: Tỉnh/Thành phố
+    broker: Broker
+    terms_of_service: Điều Khoản Sử Dụng
+    i_agree_with_terms_of_service: Tôi đồng ý với các điều khoản dịch vụ
+    signup_button_label: Đăng ký
+
+  signin:
+    title: Đăng nhập
+    dont_have_an_account: Không có tài khoản?
+    signup: Đăng ký
+    username: Tên đăng nhập
+    password: Mật khẩu
+    forgot_your_password: Bạn đã quên mật khẩu?
+    login_button_label: Đăng nhập
+
+  forgot_password:
+    title: Khôi phục mật khẩu
+    email: Email
+    recover_password_button_label: Khôi phục
+
+  set_new_password:
+    title: Đặt mật khẩu mới
+    security_code: Mã bảo mật
+    security_code_help: Chúng tôi vừa gửi một mã bảo mật tới email của bạn.
+    new_password: Mật khẩu mới
+    new_password_help: Ít nhất 8 ký tự
+    confirm_password: Xác nhận mật khẩu của bạn
+    set_new_password_button_label: Đặt lại mật khẩu
+
+  profile:
+    title: Hồ sơ
+    two_factor_auth_section:
+      title: Xác thực 2 lớp (2FA)
+      key: Khoá
+      authentication_code: Mã xác thực
+      authentication_code_title: Mã xác thực từ Google Authenticator
+      authentication_code_placeholder: "Ví dụ: 123456"
+      enable: Bật
+      disable: Tắt
+
+  trading:
+    title: Mua và Bán
+
+  offerbook:
+    title: Sổ lệnh
+    cumulative: Lũy kế
+    fees: Phí
+
+  admin:
+    title: Admin
+
+  customers:
+    title: Khách hàng
+
+  account_overview:
+    title:  Tổng quan về tài khoản
+    set_user_fees_button_label: Thiết lập phí dịch vụ
+
+  withdraw:
+    title: Các lệnh rút tiền
+
+  withdraw_requests:
+    title: Lệnh rút tiền của khách
+
+  withdraw_methods:
+    title: Withdraw methods
+
+  deposit:
+    title: Các lệnh gửi tiền
+
+  deposit_requests:
+    title: Lệnh gửi tiền của khách
+
+  ledger:
+    title: Sổ kế toán
+
+  algotrading:
+    title: Thuật toán cho giao dịch
+
+  api:
+    title: Các khoá API
+    new_api_key: Khoá API Mới
+
+  settings:
+    title: Cài Đặt
+
+  verification:
+    title: Xác minh tài khoản
+
+  market:
+    title: Thị trường
+
+  alerts:
+    verification: Bạn chưa gửi tài liệu xác minh. Vui lòng xác minh tài khoản của bạn.
+    enable_two_factor: Bạn có thể tăng mức độ an ninh cho tài khoản của bạn bằng cách bật chức năng xác thực 2 lớp.
+    frozen_account: Tài khoản của bạn đã bị khoá. Xin vui lòng liên hệ với bộ phận hỗ trợ khách hàng.
+
+  line_of_credit:
+    title: Hạn mức tín dụng
+
+  history:
+    title: Lịch sử giao dịch
+
+  partners:
+    title: Sử dụng Bitcoin của bạn
+    more: Hơn
+    purseio:
+      title: Purse.io
+      description: Tiết kiệm 15% trên Amazon với Bitcoin
+
+  sidebar:
+    admin: Admin
+    market: "Thị trường:"
+    navigation: Sự đi biển
+    menu: Menu
+    my_profile: Hồ sơ
+    my_broker: Về sàn giao dịch
+    trading: Mua và Bán
+    offerbook: Sổ lệnh
+    partners: Sử dụng Bitcoin của bạn
+    ledger: Sổ kế toán
+    customers: Khách hàng
+    deposit_requests: Lệnh gửi tiền của khách
+    withdraw_requests: Lệnh rút tiền của khách
+    deposit: Các lệnh gửi tiền
+    withdraw: Các lệnh rút tiền
+    verification: Xác minh tài khoản của bạn
+    line_of_credit: Hạn mức tín dụng
+    support: Ý kiến & Hỗ trợ
+    api: API
+    logout: Thoát
+    algotrading: Thuật toán cho giao dịch
+    history: Lịch sử giao dịch
+    card:  Blink Card
+  themes:
+    title: Themes
+    choose: Choose a Theme
+

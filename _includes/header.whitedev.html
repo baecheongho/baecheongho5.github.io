@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html class="ls-theme-orange  ls-pre-panel">
+<head>
+  {% assign exchange = "exchanges." | append: site.exchange %}
+  {% assign title = exchange | append: ".title" %}
+  <title> {% t title %} </title>
+
+  <meta charset="utf-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="author" content="{{ site.author }}">
+
+  {% assign description = exchange | append: ".description" %}
+  {% assign keywords = exchange    | append: ".keywords" %}
+
+  <meta name="description" content="{% t description %}">
+  <meta name="keywords" content="{% t keywords %}">
+  <meta property="og:title" content="{% t title %}">
+  <meta property="og:description" content="{% t description %}">
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+  <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{% if page.url != '/index.html' %}{{ page.url }}{% endif %}">
+  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/exchange_logos/{{ site.exchange_logo }}_social_network_share.png">
+
+  <link rel="shortcut icon" href="{{ site.url }}{{ site.baseurl }}/assets/exchange_logos/{{ site.exchange_logo }}_favicon.ico">
+  <link rel="icon" href="{{ site.url }}{{ site.baseurl }}/assets/exchange_logos/{{ site.exchange_logo }}_favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{% if page.url != '/index.html' %}{{ page.url }}{% endif %}"/>
+  <script type="text/javascript" src="//apis.google.com/js/plusone.js"></script>
+
+  <link href="{{ site.url }}{{ site.baseurl }}/assets/themes/default/css/font-awesome.min.css" rel="stylesheet">
+  <link href="{{ site.url }}{{ site.baseurl }}/assets/themes/whitedev/css/Dialog.css" rel="stylesheet">
+  <link href="{{ site.url }}{{ site.baseurl }}/assets/themes/whitedev/fonts/flaticon.css" rel="stylesheet">
+  <link href="{{ site.url }}{{ site.baseurl }}/assets/themes/whitedev/stylesheets/grid.css" rel="stylesheet">
+  <link href="{{ site.url }}{{ site.baseurl }}/assets/themes/whitedev/css/fuelux.css" rel="stylesheet">
+  <link href="{{ site.url }}{{ site.baseurl }}/assets/themes/default/css/default.uni-form.css" rel="stylesheet">
+  <link href="{{ site.url }}{{ site.baseurl }}/assets/themes/whitedev/css/main.css" rel="stylesheet">
+  <link href="{{ site.url }}{{ site.baseurl }}/assets/css/flag-icon.css" rel="stylesheet">
+
+
+  <!--Custom CSS -->
+  <link href="{{ site.url }}{{ site.baseurl }}/assets/themes/whitedev/css/main.{{site.exchange}}.css" rel="stylesheet">
+
+  <script data-cfasync="false" src="{{ site.url }}{{ site.baseurl }}/assets/js/bitex_app_blink_trade.compiled.{{site.lang}}.whitedev.js?v={{ site.deploy_version }}" type="text/javascript"></script>
+  <script src="{{ site.url }}{{ site.baseurl }}/assets/js/externs/qrcode.min.js"></script>
+</head>
+<body class="{% if page.body_classes %} {{ page.body_classes }} {% endif %}">
+
+
+  <div id='id_toolbar' class="ls-topbar">
+    <div class="ls-notification-topbar">
+
+
+        <div class="bitex-display-if-logged">
+            <div data-ls-module="dropdown" class="ls-dropdown ls-user-account">
+                    <a href="" class="ls-ico-user">
+                        <span class="bitex-model ls-name" data-model-key="DisplayName"></span>
+                        (<span class="bitex-model" data-model-key="PseudoName"></span>)
+                    </a>
+                    <nav class="ls-dropdown-nav ls-user-menu ls-user-menu-header" aria-hidden="true">
+                        <ul>
+                        <li><a href="" data-switch-view="profile" role="option">{% t views.sidebar.my_profile %}</a></li>
+                        <li><a href="" data-switch-view="trading" role="option">{% t views.sidebar.trading %}</a></li>
+                        <li><a href="" data-switch-view="offerbook" role="option">{% t views.sidebar.offerbook %}</a></li>
+                        <li><a href="javascript:location.reload()" role="option">{% t views.sidebar.logout %}</a></li>
+                        </ul>
+                    </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Dropdown language -->
+    <div class="ls-language ls-notification-topbar ls-notification-links">
+      <div data-ls-module="dropdown" class="ls-dropdown">
+          <a href="#" class="" role="button" class="dropdown-toggle" data-toggle="dropdown">
+              <span class="flag-icon flag-icon-{{ site.lang}}"></span>
+              <b class="caret"></b>
+          </a>
+          <nav class="ls-dropdown-nav ls-user-menu" aria-hidden="true">
+            <ul>
+            {% for lang in site.languages %}
+              {% if  lang != site.lang  %}
+                {% if forloop.first %}
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="{{ site.url }}{{ site.baseurl_root }}/">
+                        <span class="flag-icon flag-icon-{{lang}}"></span>
+                    </a>
+                </li>
+                {% else %}
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="{{ site.url }}{{ site.baseurl_root }}/{{lang}}">
+                        <span class="flag-icon flag-icon-{{lang}}"></span>
+                    </a>
+                </li>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+            </ul>
+          </nav>
+      </div>
+    </div>
+    <div class="ls-notification-topbar ls-notification-links">
+        <div class="ls-alerts-list" role="alert">
+            <a href="">
+                <button id="id_button_connect_ws" class="bitex-hide-if-ws-connected btn-link ls-btn" style="">
+                    {% t views.toolbar.connect %} 
+                    <!-- <i class="icon-white icon-repeat"></i> -->
+                </button>
+            </a>
+            <table style="display:inline-block">
+                <tr>
+                    <td class="bitex-display-if-logged">
+                        <a href="" data-switch-view="trading" class="ls-tooltip-bottom" aria-label="{% t views.trading.title %}"><i data-switch-view="trading" class="ls-ico-stats"> </i></a>
+                    </td>
+                    <td>
+                        <a href="" data-switch-view="market" class="ls-tooltip-bottom" aria-label="{% t views.market.title %}"><i data-switch-view="market" class="ls-ico-chart-bar-up"> </i></a>
+                    </td>
+                    <td>
+                        <a href="" data-switch-view="faq" class="ls-tooltip-bottom" aria-label="{% t views.faq.title %}"><i data-switch-view="faq" class="ls-ico-help"></i></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="bitex-display-if-logged">
+        <span class="ls-show-sidebar ls-ico-menu"></span>
+    </div>
+
+    <a href="" data-switch-view="trading" class="ls-go-next"></a>
+  </div>
+
+
+  </div>
+
+
+  <div id="id_notifications" class="notifications top-right">
+  <div></div>
+  </div>
+
+<div class="bitex-display-if-logged">
+<aside id='id_sidebar' class="ls-sidebar span3 sidebar bitex-view
+                                            bitex-view-profile
+                                            bitex-view-trading
+                                            bitex-view-offerbook
+                                            bitex-view-twofactor
+                                            bitex-view-admin_view
+                                            bitex-view-customers
+                                            bitex-view-account_overview
+                                            bitex-view-withdraw
+                                            bitex-view-withdraw_requests
+                                            bitex-view-deposit
+                                            bitex-view-deposit_requests
+                                            bitex-view-ledger
+                                            bitex-view-settings
+                                            bitex-view-settings
+                                            bitex-view-algotrading
+                                            bitex-view-api
+                                            bitex-view-my_broker
+                                            bitex-view-verification">
+
+    <div data-ls-module="dropdown" class="ls-dropdown ls-user-account">
+
+        <a href="#" class="ls-ico-user">
+            <span class="bitex-model ls-name" data-model-key="DisplayName"></span>
+            (<span class="bitex-model" data-model-key="PseudoName"></span>)
+        </a>
+
+        <nav class="ls-dropdown-nav ls-user-menu">
+            <ul>
+                <li><a href="" data-switch-view="profile" role="option">{% t views.sidebar.my_profile %}</a></li>
+                <li><a href="" data-switch-view="trading" role="option">{% t views.sidebar.trading %}</a></li>
+                <li><a href="" data-switch-view="offerbook" role="option">{% t views.sidebar.offerbook %}</a></li>
+            </ul>
+            <a href="javascript:location.reload()" class="ls-btn-logout" role="combobox" aria-expanded="false">{% t views.sidebar.logout %}</a>
+        </nav>
+
+    </div>
+
+
+    <div class="bitex-display-if-non-broker">
+        <h1 data-switch-view="offerbook" class="ls-brand-name">
+            <a href="#" data-switch-view="offerbook">
+
+                {% if site.exchange != "demo" %}
+                    <img data-switch-view="offerbook" src="{{ site.url }}{{ site.baseurl }}/assets/themes/whitedev/images/brand-{{ site.exchange }}.png" class="brand-menu">
+                {% endif %}
+            </a>
+        </h1>
+    </div>
+
+    <div id="sidebar_wrap">
+      <div id="account_balance" class="ls-box youraccount">
+          <h5 class="ls-title-4 ls-text-uppercase">{% t views.account_overview.title %}</h5>
+        <form class="row">
+            <div class="col-md-6">
+                <label class="control-label" for="id_instrument_1">{% t views.sidebar.market %}</label>
+            </div>
+            <div class="col-md-6">
+                <select id="id_instrument_1" class="ls-dropdown-nav">
+                <option></option>
+                </select>
+            </div>
+        </form>
+        <div id="id_account_summary_content"></div>
+      </div>
+
+      <div id="id_remittance_box" style="border-right:1px solid #eee" class="youraccount"></div>
+    </div>
+
+    <nav class="ls-menu" role="navigation">
+        <ul role="menu">
+            <li id="menu-admin_view" class="bitex-display-if-broker">
+              <a href="" data-switch-view="admin_view" class="ls-ico-user" role="menuitem" style="outline: none;">
+                {% t views.sidebar.admin %}
+              </a>
+            </li>
+            <li id="menu-profile">
+              <a href="" data-switch-view="profile" class="ls-ico-user" role="menuitem" style="outline: none;">
+                {% t views.sidebar.my_profile %}
+              </a>
+            </li>
+            <li id="menu-my_broker">
+              <a href="" data-switch-view="my_broker" class="ls-ico-info" role="menuitem" style="outline: none;">
+                {% t views.sidebar.my_broker %}
+              </a>
+            </li>
+            <li id="menu-trading">
+              <a href="" data-switch-view="trading" class="ls-ico-docs" role="menuitem">
+                {% t views.sidebar.trading %}
+              </a>
+            </li>
+            <li id="menu-offerbook">
+              <a href="" data-switch-view="offerbook" class="ls-ico-book" role="menuitem">
+                {% t views.sidebar.offerbook %}
+              </a>
+            </li>
+            <li id="menu-algotrading">
+              <a href="" data-switch-view="algotrading" class="ls-ico-cog" role="menuitem">
+                {% t views.sidebar.algotrading %}
+              </a>
+            </li>
+            <li id="menu-ledger">
+              <a href="" data-switch-view="ledger" class="ls-ico-list" role="menuitem">
+                {% t views.sidebar.ledger %}
+              </a>
+            </li>
+            <li id="menu-deposit" class="bitex-display-if-non-broker">
+              <a href="" data-switch-view="deposit" class="ls-ico-download" role="menuitem">
+                {% t views.sidebar.deposit %}
+              </a>
+            </li>
+            <li id="menu-withdraw" class="bitex-display-if-non-broker">
+              <a href="" data-switch-view="withdraw" class="ls-ico-upload" role="menuitem">
+                {% t views.sidebar.withdraw %}
+              </a>
+            </li>
+            <li id="verification_menu_id">
+              <a href="" data-switch-view="verification" class="ls-ico-checkbox-checked"  role="menuitem">
+                {% t views.sidebar.verification %}
+              </a>
+            </li>
+            <li id="menu-api">
+              <a href="" data-switch-view="api" class="ls-ico-upload" role="menuitem">
+                {% t views.sidebar.api %}
+              </a>
+            </li>
+        </ul>
+    </nav>
+
+</aside>
+</div>
+        <div class="bitex-display-if-logged ls-main container-fluid" style="min-height:initial">
+            <div class="alert | bitex-model" style="display: none" data-model-key="IsMissingVerification" data-model-action="show_element">
+                <table>
+                    <tr>
+                        <td style="width:45px">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        </td>
+                        <td>
+                            <a href="" data-switch-view="verification"> {% t views.alerts.verification %} </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="alert alert-success | bitex-model" style="display: none" data-model-key="TwoFactorEnabled" data-model-action="hide_element">
+                <table>
+                    <tr>
+                        <td style="width:45px">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        </td>
+                        <td>
+                            <a href="" data-switch-view="twofactor"> {% t views.alerts.enable_two_factor %} </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="alert alert-error | bitex-model" style="display: none" data-model-key="IsAccountBlocked" data-model-action="show_element">
+                <table>
+                    <tr>
+                        <td style="width:45px">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        </td>
+                        <td>
+                            <a href="" data-switch-view="faq"> {% t views.alerts.frozen_account %} </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
